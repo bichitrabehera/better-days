@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterDays</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h4>BetterDays</h4>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="templates/index.html">Home</a></li>
+                <li><a href="#questions">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Student Forum</a></li>
+            </ul>
+        </div>
+        <!-- Mobile menu icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <aside id="mobile-sidebar">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#questions">Services</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Student Forum</a></li>
+        </ul>
+    </aside>
+    <section id="resources">
+        <h1 class="resource-h1">Mental Health Resources</h1>
+        <p class="resource-p">Your mental health matters. Below are trusted organizations and platforms offering
+            valuable information,
+            support, and guidance. <br> Whether you’re looking to learn more about mental health, find a therapist, or
+            need
+            urgent help, these resources can guide you.</p>
+
+        <div class="all-resources">
+            <div class="resource">
+                <h3><a href="https://www.who.int" target="_blank">World Health Organization</a></h3>
+                <p>The WHO provides comprehensive guides and information on mental health, including tips for coping
+                    with depression and strategies to maintain mental well-being globally.</p>
+                <button><a href="https://www.who.int" target="_blank">Go to Website</a></button>
+            </div>
+            <div class="resource">
+                <h3><a href="https://mhanational.org" target="_blank">Mental HealBetterDays</a></h3>
+                <p>Explore tools, articles, and self-assessments for understanding mental health better. MHA is a
+                    community-focused platform offering resources for prevention, early intervention, and recovery.</p>
+                <button><a href="https://mhanational.org" target="_blank">Go to Website</a></button>
+            </div>
+            <div class="resource">
+                <h3><a href="https://988lifeline.org" target="_blank">988 Suicide & Crisis Lifeline</a></h3>
+                <p>Need help now? The 988 Lifeline offers free and confidential support for anyone in distress. Call or
+                    chat online 24/7 to connect with trained counselors.</p>
+                <button><a href="https://988lifeline.org" target="_blank">Go to Website</a></button>
+            </div>
+            <div class="resource">
+                <h3><a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a></h3>
+                <p>A go-to directory for finding therapists, psychiatrists, and mental health professionals near you.
+                    They also feature insightful articles on mental health topics.</p>
+                <button><a href="https://www.psychologytoday.com" target="_blank">Go to Website</a></button>
+            </div>
+            <div class="resource">
+                <h3><a href="https://www.verywellmind.com" target="_blank">Verywell Mind</a></h3>
+                <p>Verywell Mind provides easy-to-understand articles and tips to improve mental health and wellness.
+                    It’s an excellent resource for practical, everyday advice.</p>
+                <button><a href="https://www.verywellmind.com" target="_blank">Go to Website</a></button>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

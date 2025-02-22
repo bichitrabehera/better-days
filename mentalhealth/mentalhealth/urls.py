@@ -18,13 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-from mental.views import home, therapist
+from mental.views import home, therapist , resources , forum
 
 urlpatterns = [
     path('mental/', include('mental.urls')),
 
     path('', home, name='home'),
     path('therapist/', therapist, name='therapist'),
+    path('resources/', resources, name='resources'),
+    path('forum/', forum, name='forum'),
 
     path('admin/', admin.site.urls),
 ]
