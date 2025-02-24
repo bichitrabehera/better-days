@@ -19,10 +19,11 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="templates/index.html">Home</a></li>
-                <li><a href="#questions">Services</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Student Forum</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'resources' %}">Resources</a></li>
+                <li><a href="{% url 'submit_experience' %}">Share your Experience</a></li>
+                <li><a href="{% url 'display_experiences' %}">View Experiences</a></li>
             </ul>
         </div>
         <!-- Mobile menu icon -->
@@ -34,9 +35,9 @@
     <aside id="mobile-sidebar">
         <button class="close-btn" onclick="closeMenu()">×</button>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#questions">Services</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
             <li><a href="#contact">Student Forum</a></li>
         </ul>
     </aside>
@@ -56,7 +57,7 @@
                 <button><a href="https://www.who.int" target="_blank">Go to Website</a></button>
             </div>
             <div class="resource">
-                <h3><a href="https://mhanational.org" target="_blank">Mental HealBetterDays</a></h3>
+                <h3><a href="https://mhanational.org" target="_blank">Mental Health America</a></h3>
                 <p>Explore tools, articles, and self-assessments for understanding mental health better. MHA is a
                     community-focused platform offering resources for prevention, early intervention, and recovery.</p>
                 <button><a href="https://mhanational.org" target="_blank">Go to Website</a></button>
@@ -82,8 +83,6 @@
         </div>
     </section>
     <hr>
-
-
 
     <script src="../js/script.js"></script>
 </body>

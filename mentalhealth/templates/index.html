@@ -19,10 +19,10 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#questions">Services</a></li>
-                <li><a href="/mentalhealth/templates/resources.html">Resources</a></li>
-                <li><a href="#contact">Student Forum</a></li>
+                <li><a href="{% url 'submit_experience' %}">Share your Experience</a></li>
+                <li><a href="{% url 'display_experiences' %}">View Experiences</a></li>
+                <li><a href="{% url 'therapist' %}">Therapist</a></li>
+                <li><a href="{% url 'resources' %}">Resources</a></li>
             </ul>
         </div>
         <!-- Mobile menu icon -->
@@ -34,10 +34,11 @@
     <aside id="mobile-sidebar">
         <button class="close-btn" onclick="closeMenu()">×</button>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#questions">Services</a></li>
-            <li><a href="/resources.html">Resources</a></li>
-            <li><a href="#contact">Student Forum</a></li>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'submit_experience' %}">Share your Experience</a></li>
+            <li><a href="{% url 'display_experiences' %}">View Experiences</a></li>
         </ul>
     </aside>
 
@@ -168,7 +169,7 @@
     <section id="find-a-therapist">
         <h3>Looking for a Therapist?
         </h3>
-        <button><a href="templates/therapist.html">Find Here</a></button>
+        <button><a href="{% url 'therapist' %}">Find Here</a></button>
     </section>
     <hr>
     <section id="motivation">

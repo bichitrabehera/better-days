@@ -19,10 +19,11 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="templates/index.html">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="#questions">Services</a></li>
                 <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Student Forum</a></li>
+                <li><a href="{% url 'submit_experience' %}">Share your Experience</a></li>
+                <li><a href="{% url 'display_experiences' %}">View Experiences</a></li>
             </ul>
         </div>
         <!-- Mobile menu icon -->
@@ -34,13 +35,14 @@
     <aside id="mobile-sidebar">
         <button class="close-btn" onclick="closeMenu()">×</button>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#questions">Services</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Student Forum</a></li>
+            <li><a href="{% url 'submit_experience' %}">Share your Experience</a></li>
+            <li><a href="{% url 'display_experiences' %}">View Experiences</a></li>
         </ul>
     </aside>
-    <div  class="student-title">
+    <div class="student-title">
         <h2>Student Experiences</h2>
         <button>Share your Experience</button>
     </div>
